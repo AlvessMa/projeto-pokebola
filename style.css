@@ -1,0 +1,147 @@
+body {
+    /* Definindo fonte do site */
+    font-family: 'Poppins', sans-serif;
+
+    /* Dando margem para o site (lados) */
+
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: darkgrey;
+    color: #333333;
+}
+
+body.modo-escuro {
+
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+
+}
+
+header .imagem-botao {
+    width: 60px;
+}
+
+header .logo {
+    width: 45px;
+    margin: 50px;
+}
+
+header #botao {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.15);
+    transition: transform 250ms;
+}
+
+main {
+    padding: 25px;
+}
+
+.listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /*Espaçamento entre os cartões */
+    justify-content: center;
+}
+
+.cartao-pokemon {
+    background-color: #d8e3ec;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out
+}
+
+main .cartao-pokemon:hover {
+    background-color: #96d9d6;
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama {
+
+    background-color: rgb(35, 179, 35);
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+
+    background-color: #ee8130;
+}
+
+.inseto {
+    background-color: #a6b91a;
+
+}
+
+.voador {
+
+    background-color: rgb(170, 215, 255);
+}
+
+.dragao {
+
+    background-color: rgb(30, 66, 173);
+}
+
+.agua {
+
+    background-color: rgb(75, 75, 199);
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow: scroll;
+    font-size: 13px;
+    padding: 10px;
+}
